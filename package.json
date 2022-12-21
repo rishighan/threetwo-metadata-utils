@@ -1,6 +1,6 @@
 {
   "name": "threetwo-metadata-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utilities for performing ops on metadata sourced from various places in ThreeTwo.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,8 @@
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "pub": "npm version patch --force && npm publish"
   },
   "files": [
     "dist/*"
@@ -37,7 +38,7 @@
   "homepage": "https://github.com/rishighan/threetwo-metadata-utils#readme",
   "dependencies": {
     "babel-jest": "^27.5.1",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
